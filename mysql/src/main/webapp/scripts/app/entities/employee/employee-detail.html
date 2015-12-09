@@ -1,0 +1,62 @@
+
+<div>
+    <h2><span translate="ontimeApp.employee.detail.title">Employee</span> {{employee.id}}</h2>
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+            <tr>
+                <th translate="entity.detail.field">Field</th>
+                <th translate="entity.detail.value">Value</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>
+                    <span translate="ontimeApp.employee.firstName">FirstName</span>
+                </td>
+                <td>
+                    <span class="form-control-static">{{employee.firstName}}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span translate="ontimeApp.employee.lastName">LastName</span>
+                </td>
+                <td>
+                    <span class="form-control-static">{{employee.lastName}}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span translate="ontimeApp.employee.uid">Uid</span>
+                </td>
+                <td>
+                    <span class="form-control-static">{{employee.uid}}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span translate="ontimeApp.employee.phone">Phone</span>
+                </td>
+                <td>
+                    <span class="form-control-static">{{employee.phone}}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span translate="ontimeApp.employee.email">Email</span>
+                </td>
+                <td>
+                    <span class="form-control-static">{{employee.email}}</span>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <button type="submit"
+            onclick="window.history.back()"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span translate="entity.action.back"> Back</span>
+    </button>
+</div>

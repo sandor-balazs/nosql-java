@@ -1,0 +1,23 @@
+{
+    "ontimeApp": {
+        "allocation" : {
+            "home": {
+                "title": "Allocations",
+                "createLabel": "Egy új Allocation létrehozása",
+                "createOrEditLabel": "Hozzon létre, vagy módosítson Allocationt"
+            },
+            "delete": {
+                "question": "Biztos benne, hogy törölni szeretné az Allocationt {{ id }} azonosítóval?"
+            },
+            "detail": {
+                "title": "Allocation"
+            },
+            "fte": "Fte",
+            "year": "Year",
+            "month": "Month",
+            "projectCountry": "ProjectCountry",
+            "employment": "Employment",
+            "skill": "Skill"
+        }
+    }
+}

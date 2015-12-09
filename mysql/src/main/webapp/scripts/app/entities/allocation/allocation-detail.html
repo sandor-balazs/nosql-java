@@ -1,0 +1,70 @@
+
+<div>
+    <h2><span translate="ontimeApp.allocation.detail.title">Allocation</span> {{allocation.id}}</h2>
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+            <tr>
+                <th translate="entity.detail.field">Field</th>
+                <th translate="entity.detail.value">Value</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>
+                    <span translate="ontimeApp.allocation.fte">Fte</span>
+                </td>
+                <td>
+                    <span class="form-control-static">{{allocation.fte}}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span translate="ontimeApp.allocation.year">Year</span>
+                </td>
+                <td>
+                    <span class="form-control-static">{{allocation.year}}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span translate="ontimeApp.allocation.month">Month</span>
+                </td>
+                <td>
+                    <span class="form-control-static">{{allocation.month}}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span translate="ontimeApp.allocation.projectCountry">projectCountry</span>
+                </td>
+                <td>
+                    <a class="form-control-static" ui-sref="projectCountry.detail({id:allocation.projectCountryId})">{{allocation.projectCountryId}}</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span translate="ontimeApp.allocation.employment">employment</span>
+                </td>
+                <td>
+                    <a class="form-control-static" ui-sref="employment.detail({id:allocation.employmentId})">{{allocation.employmentId}}</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span translate="ontimeApp.allocation.skill">skill</span>
+                </td>
+                <td>
+                    <a class="form-control-static" ui-sref="skill.detail({id:allocation.skillId})">{{allocation.skillId}}</a>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <button type="submit"
+            onclick="window.history.back()"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span translate="entity.action.back"> Back</span>
+    </button>
+</div>

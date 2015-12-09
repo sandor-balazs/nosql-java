@@ -1,0 +1,19 @@
+{
+    "ontimeApp": {
+        "status" : {
+            "home": {
+                "title": "Statuss",
+                "createLabel": "Egy új Status létrehozása",
+                "createOrEditLabel": "Hozzon létre, vagy módosítson Statust"
+            },
+            "delete": {
+                "question": "Biztos benne, hogy törölni szeretné az Statust {{ id }} azonosítóval?"
+            },
+            "detail": {
+                "title": "Status"
+            },
+            "name": "Name",
+            "appOrder": "AppOrder"
+        }
+    }
+}

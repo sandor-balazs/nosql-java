@@ -1,0 +1,46 @@
+
+<div>
+    <h2><span translate="ontimeApp.projectCountry.detail.title">ProjectCountry</span> {{projectCountry.id}}</h2>
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+            <tr>
+                <th translate="entity.detail.field">Field</th>
+                <th translate="entity.detail.value">Value</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>
+                    <span translate="ontimeApp.projectCountry.projectRegion">projectRegion</span>
+                </td>
+                <td>
+                    <a class="form-control-static" ui-sref="projectRegion.detail({id:projectCountry.projectRegionId})">{{projectCountry.projectRegionId}}</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span translate="ontimeApp.projectCountry.country">country</span>
+                </td>
+                <td>
+                    <a class="form-control-static" ui-sref="country.detail({id:projectCountry.countryId})">{{projectCountry.countryName}}</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span translate="ontimeApp.projectCountry.status">status</span>
+                </td>
+                <td>
+                    <a class="form-control-static" ui-sref="status.detail({id:projectCountry.statusId})">{{projectCountry.statusName}}</a>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <button type="submit"
+            onclick="window.history.back()"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span translate="entity.action.back"> Back</span>
+    </button>
+</div>

@@ -1,0 +1,64 @@
+<div>
+    <h2 translate="ontimeApp.allocation.home.title">Allocations</h2>
+    <jh-alert></jh-alert>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <button class="btn btn-primary" ui-sref="allocation.new">
+                    <span class="glyphicon glyphicon-flash"></span> <span translate="ontimeApp.allocation.home.createLabel">Create a new Allocation</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th><span translate="global.field.id">ID</span></th>
+                    <th><span translate="ontimeApp.allocation.fte">Fte</span></th>
+                    <th><span translate="ontimeApp.allocation.year">Year</span></th>
+                    <th><span translate="ontimeApp.allocation.month">Month</span></th>
+                    <th><span translate="ontimeApp.allocation.projectCountry">projectCountry</span></th>
+                    <th><span translate="ontimeApp.allocation.employment">employment</span></th>
+                    <th><span translate="ontimeApp.allocation.skill">skill</span></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="allocation in allocations track by allocation.id">
+                    <td><a ui-sref="allocation.detail({id:allocation.id})">{{allocation.id}}</a></td>
+                    <td>{{allocation.fte}}</td>
+                    <td>{{allocation.year}}</td>
+                    <td>{{allocation.month}}</td>
+                    <td>
+                        <a ui-sref="projectCountry.detail({id:allocation.projectCountryId})">{{allocation.projectCountryId}}</a>
+                    </td>
+                    <td>
+                        <a ui-sref="employment.detail({id:allocation.employmentId})">{{allocation.employmentId}}</a>
+                    </td>
+                    <td>
+                        <a ui-sref="skill.detail({id:allocation.skillId})">{{allocation.skillId}}</a>
+                    </td>
+                    <td>
+                        <button type="submit"
+                                ui-sref="allocation.detail({id:allocation.id})"
+                                class="btn btn-info btn-sm">
+                            <span class="glyphicon glyphicon-eye-open"></span>&nbsp;<span translate="entity.action.view"> View</span>
+                        </button>
+                        <button type="submit"
+                                ui-sref="allocation.edit({id:allocation.id})"
+                                class="btn btn-primary btn-sm">
+                            <span class="glyphicon glyphicon-pencil"></span>&nbsp;<span translate="entity.action.edit"> Edit</span>
+                        </button>
+                        <button type="submit"
+                                ui-sref="allocation.delete({id:allocation.id})"
+                                class="btn btn-danger btn-sm">
+                            <span class="glyphicon glyphicon-remove-circle"></span>&nbsp;<span translate="entity.action.delete"> Delete</span>
+                        </button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

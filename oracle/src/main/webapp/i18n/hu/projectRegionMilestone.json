@@ -1,0 +1,21 @@
+{
+    "ontimeApp": {
+        "projectRegionMilestone" : {
+            "home": {
+                "title": "ProjectRegionMilestones",
+                "createLabel": "Egy új ProjectRegionMilestone létrehozása",
+                "createOrEditLabel": "Hozzon létre, vagy módosítson ProjectRegionMilestonet"
+            },
+            "delete": {
+                "question": "Biztos benne, hogy törölni szeretné az ProjectRegionMilestonet {{ id }} azonosítóval?"
+            },
+            "detail": {
+                "title": "ProjectRegionMilestone"
+            },
+            "planned": "Planned",
+            "actual": "Actual",
+            "projectRegion": "ProjectRegion",
+            "milestone": "Milestone"
+        }
+    }
+}

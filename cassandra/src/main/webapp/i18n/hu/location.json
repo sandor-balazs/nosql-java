@@ -1,0 +1,19 @@
+{
+    "ontimeApp": {
+        "location" : {
+            "home": {
+                "title": "Locations",
+                "createLabel": "Egy új Location létrehozása",
+                "createOrEditLabel": "Hozzon létre, vagy módosítson Locationt"
+            },
+            "delete": {
+                "question": "Biztos benne, hogy törölni szeretné az Locationt {{ id }} azonosítóval?"
+            },
+            "detail": {
+                "title": "Location"
+            },
+            "name": "Name",
+            "address": "Address"
+        }
+    }
+}

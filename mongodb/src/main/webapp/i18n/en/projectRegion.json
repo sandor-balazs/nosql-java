@@ -1,0 +1,20 @@
+{
+    "ontimeApp": {
+        "projectRegion" : {
+            "home": {
+                "title": "ProjectRegions",
+                "createLabel": "Create a new ProjectRegion",
+                "createOrEditLabel": "Create or edit a ProjectRegion"
+            },
+            "created": "A new ProjectRegion is created with identifier {{ param }}",
+            "updated": "A ProjectRegion is updated with identifier {{ param }}",
+            "deleted": "A ProjectRegion is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete ProjectRegion {{ id }}?"
+            },
+            "detail": {
+                "title": "ProjectRegion"
+            }
+        }
+    }
+}

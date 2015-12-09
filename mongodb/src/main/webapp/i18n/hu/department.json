@@ -1,0 +1,18 @@
+{
+    "ontimeApp": {
+        "department" : {
+            "home": {
+                "title": "Departments",
+                "createLabel": "Egy új Department létrehozása",
+                "createOrEditLabel": "Hozzon létre, vagy módosítson Departmentt"
+            },
+            "delete": {
+                "question": "Biztos benne, hogy törölni szeretné az Departmentt {{ id }} azonosítóval?"
+            },
+            "detail": {
+                "title": "Department"
+            },
+            "name": "Name"
+        }
+    }
+}

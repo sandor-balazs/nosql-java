@@ -1,0 +1,8 @@
+{
+    "main": {
+        "title": "Üdvözöljük!",
+        "logged": {
+            "message": "Ön \"{{username}}\"-ként lépett be."
+        }
+    }
+}

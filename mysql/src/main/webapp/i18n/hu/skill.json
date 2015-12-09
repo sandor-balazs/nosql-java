@@ -1,0 +1,18 @@
+{
+    "ontimeApp": {
+        "skill" : {
+            "home": {
+                "title": "Skills",
+                "createLabel": "Egy új Skill létrehozása",
+                "createOrEditLabel": "Hozzon létre, vagy módosítson Skillt"
+            },
+            "delete": {
+                "question": "Biztos benne, hogy törölni szeretné az Skillt {{ id }} azonosítóval?"
+            },
+            "detail": {
+                "title": "Skill"
+            },
+            "name": "Name"
+        }
+    }
+}

@@ -1,0 +1,62 @@
+
+<div>
+    <h2><span translate="ontimeApp.employment.detail.title">Employment</span> {{employment.id}}</h2>
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+            <tr>
+                <th translate="entity.detail.field">Field</th>
+                <th translate="entity.detail.value">Value</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>
+                    <span translate="ontimeApp.employment.fte">Fte</span>
+                </td>
+                <td>
+                    <span class="form-control-static">{{employment.fte}}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span translate="ontimeApp.employment.startDate">StartDate</span>
+                </td>
+                <td>
+                    <span class="form-control-static">{{employment.startDate | date:'mediumDate'}}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span translate="ontimeApp.employment.endDate">EndDate</span>
+                </td>
+                <td>
+                    <span class="form-control-static">{{employment.endDate | date:'mediumDate'}}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span translate="ontimeApp.employment.employee">employee</span>
+                </td>
+                <td>
+                    <a class="form-control-static" ui-sref="employee.detail({id:employment.employeeId})">{{employment.employeeUid}}</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span translate="ontimeApp.employment.department">department</span>
+                </td>
+                <td>
+                    <a class="form-control-static" ui-sref="department.detail({id:employment.departmentId})">{{employment.departmentName}}</a>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <button type="submit"
+            onclick="window.history.back()"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span translate="entity.action.back"> Back</span>
+    </button>
+</div>

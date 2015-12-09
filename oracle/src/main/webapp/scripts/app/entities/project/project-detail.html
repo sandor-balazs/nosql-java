@@ -1,0 +1,62 @@
+
+<div>
+    <h2><span translate="ontimeApp.project.detail.title">Project</span> {{project.id}}</h2>
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+            <tr>
+                <th translate="entity.detail.field">Field</th>
+                <th translate="entity.detail.value">Value</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>
+                    <span translate="ontimeApp.project.code">Code</span>
+                </td>
+                <td>
+                    <span class="form-control-static">{{project.code}}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span translate="ontimeApp.project.title">Title</span>
+                </td>
+                <td>
+                    <span class="form-control-static">{{project.title}}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span translate="ontimeApp.project.description">Description</span>
+                </td>
+                <td>
+                    <span class="form-control-static">{{project.description}}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span translate="ontimeApp.project.status">status</span>
+                </td>
+                <td>
+                    <a class="form-control-static" ui-sref="status.detail({id:project.statusId})">{{project.statusName}}</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span translate="ontimeApp.project.funding">funding</span>
+                </td>
+                <td>
+                    <a class="form-control-static" ui-sref="funding.detail({id:project.fundingId})">{{project.fundingName}}</a>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <button type="submit"
+            onclick="window.history.back()"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span translate="entity.action.back"> Back</span>
+    </button>
+</div>

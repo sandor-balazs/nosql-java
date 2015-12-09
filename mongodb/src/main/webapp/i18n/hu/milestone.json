@@ -1,0 +1,19 @@
+{
+    "ontimeApp": {
+        "milestone" : {
+            "home": {
+                "title": "Milestones",
+                "createLabel": "Egy új Milestone létrehozása",
+                "createOrEditLabel": "Hozzon létre, vagy módosítson Milestonet"
+            },
+            "delete": {
+                "question": "Biztos benne, hogy törölni szeretné az Milestonet {{ id }} azonosítóval?"
+            },
+            "detail": {
+                "title": "Milestone"
+            },
+            "name": "Name",
+            "appOrder": "AppOrder"
+        }
+    }
+}

@@ -1,0 +1,48 @@
+<div>
+    <h2 translate="ontimeApp.skill.home.title">Skills</h2>
+    <jh-alert></jh-alert>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <button class="btn btn-primary" ui-sref="skill.new">
+                    <span class="glyphicon glyphicon-flash"></span> <span translate="ontimeApp.skill.home.createLabel">Create a new Skill</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th><span translate="global.field.id">ID</span></th>
+                    <th><span translate="ontimeApp.skill.name">Name</span></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="skill in skills track by skill.id">
+                    <td><a ui-sref="skill.detail({id:skill.id})">{{skill.id}}</a></td>
+                    <td>{{skill.name}}</td>
+                    <td>
+                        <button type="submit"
+                                ui-sref="skill.detail({id:skill.id})"
+                                class="btn btn-info btn-sm">
+                            <span class="glyphicon glyphicon-eye-open"></span>&nbsp;<span translate="entity.action.view"> View</span>
+                        </button>
+                        <button type="submit"
+                                ui-sref="skill.edit({id:skill.id})"
+                                class="btn btn-primary btn-sm">
+                            <span class="glyphicon glyphicon-pencil"></span>&nbsp;<span translate="entity.action.edit"> Edit</span>
+                        </button>
+                        <button type="submit"
+                                ui-sref="skill.delete({id:skill.id})"
+                                class="btn btn-danger btn-sm">
+                            <span class="glyphicon glyphicon-remove-circle"></span>&nbsp;<span translate="entity.action.delete"> Delete</span>
+                        </button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

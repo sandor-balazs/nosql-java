@@ -1,0 +1,26 @@
+{
+    "ontimeApp": {
+        "allocation" : {
+            "home": {
+                "title": "Allocations",
+                "createLabel": "Create a new Allocation",
+                "createOrEditLabel": "Create or edit a Allocation"
+            },
+            "created": "A new Allocation is created with identifier {{ param }}",
+            "updated": "A Allocation is updated with identifier {{ param }}",
+            "deleted": "A Allocation is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Allocation {{ id }}?"
+            },
+            "detail": {
+                "title": "Allocation"
+            },
+            "fte": "Fte",
+            "year": "Year",
+            "month": "Month",
+            "projectCountry": "ProjectCountry",
+            "employment": "Employment",
+            "skill": "Skill"
+        }
+    }
+}

@@ -1,0 +1,54 @@
+
+<div>
+    <h2><span translate="ontimeApp.projectCountryMilestone.detail.title">ProjectCountryMilestone</span> {{projectCountryMilestone.id}}</h2>
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+            <tr>
+                <th translate="entity.detail.field">Field</th>
+                <th translate="entity.detail.value">Value</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>
+                    <span translate="ontimeApp.projectCountryMilestone.planned">Planned</span>
+                </td>
+                <td>
+                    <span class="form-control-static">{{projectCountryMilestone.planned | date:'mediumDate'}}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span translate="ontimeApp.projectCountryMilestone.actual">Actual</span>
+                </td>
+                <td>
+                    <span class="form-control-static">{{projectCountryMilestone.actual | date:'mediumDate'}}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span translate="ontimeApp.projectCountryMilestone.projectCountry">projectCountry</span>
+                </td>
+                <td>
+                    <a class="form-control-static" ui-sref="projectCountry.detail({id:projectCountryMilestone.projectCountryId})">{{projectCountryMilestone.projectCountryId}}</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span translate="ontimeApp.projectCountryMilestone.milestone">milestone</span>
+                </td>
+                <td>
+                    <a class="form-control-static" ui-sref="milestone.detail({id:projectCountryMilestone.milestoneId})">{{projectCountryMilestone.milestoneName}}</a>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <button type="submit"
+            onclick="window.history.back()"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span translate="entity.action.back"> Back</span>
+    </button>
+</div>

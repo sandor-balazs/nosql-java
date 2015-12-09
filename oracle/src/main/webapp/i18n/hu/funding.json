@@ -1,0 +1,18 @@
+{
+    "ontimeApp": {
+        "funding" : {
+            "home": {
+                "title": "Fundings",
+                "createLabel": "Egy új Funding létrehozása",
+                "createOrEditLabel": "Hozzon létre, vagy módosítson Fundingt"
+            },
+            "delete": {
+                "question": "Biztos benne, hogy törölni szeretné az Fundingt {{ id }} azonosítóval?"
+            },
+            "detail": {
+                "title": "Funding"
+            },
+            "name": "Name"
+        }
+    }
+}

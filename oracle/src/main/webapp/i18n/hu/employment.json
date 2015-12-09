@@ -1,0 +1,22 @@
+{
+    "ontimeApp": {
+        "employment" : {
+            "home": {
+                "title": "Employments",
+                "createLabel": "Egy új Employment létrehozása",
+                "createOrEditLabel": "Hozzon létre, vagy módosítson Employmentt"
+            },
+            "delete": {
+                "question": "Biztos benne, hogy törölni szeretné az Employmentt {{ id }} azonosítóval?"
+            },
+            "detail": {
+                "title": "Employment"
+            },
+            "fte": "Fte",
+            "startDate": "StartDate",
+            "endDate": "EndDate",
+            "employee": "Employee",
+            "department": "Department"
+        }
+    }
+}

@@ -1,0 +1,46 @@
+
+<div>
+    <h2><span translate="ontimeApp.projectRegion.detail.title">ProjectRegion</span> {{projectRegion.id}}</h2>
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+            <tr>
+                <th translate="entity.detail.field">Field</th>
+                <th translate="entity.detail.value">Value</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>
+                    <span translate="ontimeApp.projectRegion.project">project</span>
+                </td>
+                <td>
+                    <a class="form-control-static" ui-sref="project.detail({id:projectRegion.projectId})">{{projectRegion.projectCode}}</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span translate="ontimeApp.projectRegion.region">region</span>
+                </td>
+                <td>
+                    <a class="form-control-static" ui-sref="region.detail({id:projectRegion.regionId})">{{projectRegion.regionName}}</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span translate="ontimeApp.projectRegion.status">status</span>
+                </td>
+                <td>
+                    <a class="form-control-static" ui-sref="status.detail({id:projectRegion.statusId})">{{projectRegion.statusName}}</a>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <button type="submit"
+            onclick="window.history.back()"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span translate="entity.action.back"> Back</span>
+    </button>
+</div>

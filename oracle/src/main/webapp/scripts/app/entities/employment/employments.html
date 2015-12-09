@@ -1,0 +1,60 @@
+<div>
+    <h2 translate="ontimeApp.employment.home.title">Employments</h2>
+    <jh-alert></jh-alert>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <button class="btn btn-primary" ui-sref="employment.new">
+                    <span class="glyphicon glyphicon-flash"></span> <span translate="ontimeApp.employment.home.createLabel">Create a new Employment</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th><span translate="global.field.id">ID</span></th>
+                    <th><span translate="ontimeApp.employment.fte">Fte</span></th>
+                    <th><span translate="ontimeApp.employment.startDate">StartDate</span></th>
+                    <th><span translate="ontimeApp.employment.endDate">EndDate</span></th>
+                    <th><span translate="ontimeApp.employment.employee">employee</span></th>
+                    <th><span translate="ontimeApp.employment.department">department</span></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="employment in employments track by employment.id">
+                    <td><a ui-sref="employment.detail({id:employment.id})">{{employment.id}}</a></td>
+                    <td>{{employment.fte}}</td>
+                        <td>{{employment.startDate | date:'mediumDate'}}</td>
+                        <td>{{employment.endDate | date:'mediumDate'}}</td>
+                    <td>
+                        <a ui-sref="employee.detail({id:employment.employeeId})">{{employment.employeeUserId}}</a>
+                    </td>
+                    <td>
+                        <a ui-sref="department.detail({id:employment.departmentId})">{{employment.departmentName}}</a>
+                    </td>
+                    <td>
+                        <button type="submit"
+                                ui-sref="employment.detail({id:employment.id})"
+                                class="btn btn-info btn-sm">
+                            <span class="glyphicon glyphicon-eye-open"></span>&nbsp;<span translate="entity.action.view"> View</span>
+                        </button>
+                        <button type="submit"
+                                ui-sref="employment.edit({id:employment.id})"
+                                class="btn btn-primary btn-sm">
+                            <span class="glyphicon glyphicon-pencil"></span>&nbsp;<span translate="entity.action.edit"> Edit</span>
+                        </button>
+                        <button type="submit"
+                                ui-sref="employment.delete({id:employment.id})"
+                                class="btn btn-danger btn-sm">
+                            <span class="glyphicon glyphicon-remove-circle"></span>&nbsp;<span translate="entity.action.delete"> Delete</span>
+                        </button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

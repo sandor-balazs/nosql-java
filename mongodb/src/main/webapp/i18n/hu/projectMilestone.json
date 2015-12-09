@@ -1,0 +1,19 @@
+{
+    "ontimeApp": {
+        "projectMilestone" : {
+            "home": {
+                "title": "ProjectMilestones",
+                "createLabel": "Egy új ProjectMilestone létrehozása",
+                "createOrEditLabel": "Hozzon létre, vagy módosítson ProjectMilestonet"
+            },
+            "delete": {
+                "question": "Biztos benne, hogy törölni szeretné az ProjectMilestonet {{ id }} azonosítóval?"
+            },
+            "detail": {
+                "title": "ProjectMilestone"
+            },
+            "planned": "Planned",
+            "actual": "Actual"
+        }
+    }
+}

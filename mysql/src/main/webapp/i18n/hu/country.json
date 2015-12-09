@@ -1,0 +1,21 @@
+{
+    "ontimeApp": {
+        "country" : {
+            "home": {
+                "title": "Countrys",
+                "createLabel": "Egy új Country létrehozása",
+                "createOrEditLabel": "Hozzon létre, vagy módosítson Countryt"
+            },
+            "delete": {
+                "question": "Biztos benne, hogy törölni szeretné az Countryt {{ id }} azonosítóval?"
+            },
+            "detail": {
+                "title": "Country"
+            },
+            "code": "Code",
+            "name": "Name",
+            "location": "Location",
+            "region": "Region"
+        }
+    }
+}

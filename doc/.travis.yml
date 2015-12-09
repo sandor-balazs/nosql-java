@@ -1,0 +1,5 @@
+before_script:
+  - sudo apt-get install -y texlive-latex-extra texlive-fonts-extra texlive-fonts-recommended texlive-science
+
+script:
+  - make all

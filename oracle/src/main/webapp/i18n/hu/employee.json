@@ -1,0 +1,23 @@
+{
+    "ontimeApp": {
+        "employee" : {
+            "home": {
+                "title": "Employees",
+                "createLabel": "Egy új Employee létrehozása",
+                "createOrEditLabel": "Hozzon létre, vagy módosítson Employeet"
+            },
+            "delete": {
+                "question": "Biztos benne, hogy törölni szeretné az Employeet {{ id }} azonosítóval?"
+            },
+            "detail": {
+                "title": "Employee"
+            },
+            "firstName": "FirstName",
+            "lastName": "LastName",
+            "userId": "UserId",
+            "phone": "Phone",
+            "email": "Email",
+            "employment": "Employment"
+        }
+    }
+}

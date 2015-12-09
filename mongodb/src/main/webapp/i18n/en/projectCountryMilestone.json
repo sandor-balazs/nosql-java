@@ -1,0 +1,22 @@
+{
+    "ontimeApp": {
+        "projectCountryMilestone" : {
+            "home": {
+                "title": "ProjectCountryMilestones",
+                "createLabel": "Create a new ProjectCountryMilestone",
+                "createOrEditLabel": "Create or edit a ProjectCountryMilestone"
+            },
+            "created": "A new ProjectCountryMilestone is created with identifier {{ param }}",
+            "updated": "A ProjectCountryMilestone is updated with identifier {{ param }}",
+            "deleted": "A ProjectCountryMilestone is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete ProjectCountryMilestone {{ id }}?"
+            },
+            "detail": {
+                "title": "ProjectCountryMilestone"
+            },
+            "planned": "Planned",
+            "actual": "Actual"
+        }
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "ontimeApp": {
+        "projectCountry" : {
+            "home": {
+                "title": "ProjectCountrys",
+                "createLabel": "Egy új ProjectCountry létrehozása",
+                "createOrEditLabel": "Hozzon létre, vagy módosítson ProjectCountryt"
+            },
+            "delete": {
+                "question": "Biztos benne, hogy törölni szeretné az ProjectCountryt {{ id }} azonosítóval?"
+            },
+            "detail": {
+                "title": "ProjectCountry"
+            }
+        }
+    }
+}

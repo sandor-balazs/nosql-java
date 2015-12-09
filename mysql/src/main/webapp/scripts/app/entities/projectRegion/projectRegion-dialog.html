@@ -1,0 +1,44 @@
+
+<form name="editForm" role="form" novalidate ng-submit="save()">
+
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"
+                ng-click="clear()">&times;</button>
+        <h4 class="modal-title" id="myProjectRegionLabel" translate="ontimeApp.projectRegion.home.createOrEditLabel">Create or edit a ProjectRegion</h4>
+    </div>
+    <div class="modal-body">
+        <jh-alert-error></jh-alert-error>
+        <div class="form-group">
+            <label for="id" translate="global.field.id">ID</label>
+            <input type="text" class="form-control" id="id" name="id"
+                    ng-model="projectRegion.id" readonly />
+        </div>
+
+        <div class="form-group">
+            <label translate="ontimeApp.projectRegion.project" for="field_project">project</label>
+            <select class="form-control" id="field_project" name="project" ng-model="projectRegion.projectId" ng-options="project.id as project.code for project in projects">
+                <option value=""></option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label translate="ontimeApp.projectRegion.region" for="field_region">region</label>
+            <select class="form-control" id="field_region" name="region" ng-model="projectRegion.regionId" ng-options="region.id as region.name for region in regions | orderBy:'id'">
+                <option value=""></option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label translate="ontimeApp.projectRegion.status" for="field_status">status</label>
+            <select class="form-control" id="field_status" name="status" ng-model="projectRegion.statusId" ng-options="status.id as status.name for status in statuss | orderBy:'id'">
+                <option value=""></option>
+            </select>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="clear()">
+            <span class="glyphicon glyphicon-ban-circle"></span>&nbsp;<span translate="entity.action.cancel">Cancel</span>
+        </button>
+        <button type="submit" ng-disabled="editForm.$invalid || isSaving" class="btn btn-primary">
+            <span class="glyphicon glyphicon-save"></span>&nbsp;<span translate="entity.action.save">Save</span>
+        </button>
+    </div>
+</form>

@@ -1,0 +1,19 @@
+{
+    "ontimeApp": {
+        "region" : {
+            "home": {
+                "title": "Regions",
+                "createLabel": "Egy új Region létrehozása",
+                "createOrEditLabel": "Hozzon létre, vagy módosítson Regiont"
+            },
+            "delete": {
+                "question": "Biztos benne, hogy törölni szeretné az Regiont {{ id }} azonosítóval?"
+            },
+            "detail": {
+                "title": "Region"
+            },
+            "code": "Code",
+            "name": "Name"
+        }
+    }
+}

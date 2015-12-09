@@ -1,0 +1,22 @@
+{
+    "ontimeApp": {
+        "projectRegionMilestone" : {
+            "home": {
+                "title": "ProjectRegionMilestones",
+                "createLabel": "Create a new ProjectRegionMilestone",
+                "createOrEditLabel": "Create or edit a ProjectRegionMilestone"
+            },
+            "created": "A new ProjectRegionMilestone is created with identifier {{ param }}",
+            "updated": "A ProjectRegionMilestone is updated with identifier {{ param }}",
+            "deleted": "A ProjectRegionMilestone is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete ProjectRegionMilestone {{ id }}?"
+            },
+            "detail": {
+                "title": "ProjectRegionMilestone"
+            },
+            "planned": "Planned",
+            "actual": "Actual"
+        }
+    }
+}

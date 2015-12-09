@@ -1,0 +1,22 @@
+{
+    "ontimeApp": {
+        "project" : {
+            "home": {
+                "title": "Projects",
+                "createLabel": "Egy új Project létrehozása",
+                "createOrEditLabel": "Hozzon létre, vagy módosítson Projectt"
+            },
+            "delete": {
+                "question": "Biztos benne, hogy törölni szeretné az Projectt {{ id }} azonosítóval?"
+            },
+            "detail": {
+                "title": "Project"
+            },
+            "code": "Code",
+            "title": "Title",
+            "description": "Description",
+            "status": "Status",
+            "funding": "Funding"
+        }
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "ontimeApp": {
+        "projectRegion" : {
+            "home": {
+                "title": "ProjectRegions",
+                "createLabel": "Egy új ProjectRegion létrehozása",
+                "createOrEditLabel": "Hozzon létre, vagy módosítson ProjectRegiont"
+            },
+            "delete": {
+                "question": "Biztos benne, hogy törölni szeretné az ProjectRegiont {{ id }} azonosítóval?"
+            },
+            "detail": {
+                "title": "ProjectRegion"
+            }
+        }
+    }
+}

@@ -1,0 +1,24 @@
+{
+    "ontimeApp": {
+        "projectMilestone" : {
+            "home": {
+                "title": "ProjectMilestones",
+                "createLabel": "Create a new ProjectMilestone",
+                "createOrEditLabel": "Create or edit a ProjectMilestone"
+            },
+            "created": "A new ProjectMilestone is created with identifier {{ param }}",
+            "updated": "A ProjectMilestone is updated with identifier {{ param }}",
+            "deleted": "A ProjectMilestone is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete ProjectMilestone {{ id }}?"
+            },
+            "detail": {
+                "title": "ProjectMilestone"
+            },
+            "planned": "Planned",
+            "actual": "Actual",
+            "project": "Project",
+            "milestone": "Milestone"
+        }
+    }
+}

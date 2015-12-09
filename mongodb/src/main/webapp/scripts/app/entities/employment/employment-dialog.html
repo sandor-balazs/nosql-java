@@ -1,0 +1,44 @@
+
+<form name="editForm" role="form" novalidate ng-submit="save()">
+
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"
+                ng-click="clear()">&times;</button>
+        <h4 class="modal-title" id="myEmploymentLabel" translate="ontimeApp.employment.home.createOrEditLabel">Create or edit a Employment</h4>
+    </div>
+    <div class="modal-body">
+        <jh-alert-error></jh-alert-error>
+        <div class="form-group">
+            <label for="id" translate="global.field.id">ID</label>
+            <input type="text" class="form-control" id="id" name="id"
+                    ng-model="employment.id" readonly />
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="ontimeApp.employment.fte" for="field_fte">Fte</label>
+            <input type="number" class="form-control" name="fte" id="field_fte"
+                    ng-model="employment.fte"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="ontimeApp.employment.startDate" for="field_startDate">StartDate</label>
+            <input type="date" class="form-control" name="startDate" id="field_startDate"
+                    ng-model="employment.startDate"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="ontimeApp.employment.endDate" for="field_endDate">EndDate</label>
+            <input type="date" class="form-control" name="endDate" id="field_endDate"
+                    ng-model="employment.endDate"
+                     />
+        </div>
+
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="clear()">
+            <span class="glyphicon glyphicon-ban-circle"></span>&nbsp;<span translate="entity.action.cancel">Cancel</span>
+        </button>
+        <button type="submit" ng-disabled="editForm.$invalid || isSaving" class="btn btn-primary">
+            <span class="glyphicon glyphicon-save"></span>&nbsp;<span translate="entity.action.save">Save</span>
+        </button>
+    </div>
+</form>
